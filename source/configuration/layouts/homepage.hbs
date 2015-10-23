@@ -1,16 +1,18 @@
-{{> header }}
-</style>
+  {{> header }}
 </head>
 <body>
-<div class="header">
-  <h1 class="title">{{ config 'site.title' }}</h1>
   {{> navigation }}
-</div>
-<div class="page homepage">
-  <div class="row">
-    {{#markdown}}
-      {{> body }}
-    {{/markdown}}
+  <div class="page">
+    <div class="header">
+      <h1 class="title">{{ config 'site.title' }}</h1>
+      <p class="tagline">Hand Crafted Websites built on the Latest Technology for Small to Medium Businesses that Load Quick and Rank High.</p>
+    </div>
+    <div class="content homepage">
+      <div class="row">
+        {{#markdown}}
+          {{> body }}
+        {{/markdown}}
+      </div>
+    </div>
+    {{> footer }}
   </div>
-</div>
-{{> footer }}

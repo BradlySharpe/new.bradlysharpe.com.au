@@ -1,2 +1,86 @@
 @charset 'utf-8';
 @import 'settings';
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: $font-color;
+  font-family: $font-family;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $title-font-family;
+  font-weight: 200;
+}
+
+h1 {
+  font-family: $title-font-family;
+  font-size: 4rem;
+  font-weight: 200;
+  margin: 0;
+  text-align: center;
+}
+
+.navigation {
+  background: $black;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 1);
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  ul {
+    align-items: center;
+    background: $black;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li a {
+    border-top: .4rem solid transparent;
+    color: $white;
+    display: inline-block;
+    font-family: $title-font-family;
+    font-size: 2rem;
+    font-weight: 300;
+    padding: 1.1rem 1.5rem 1.5rem;
+    text-decoration: none;
+    transition: border-top .5s, color .5s;
+
+    &:hover {
+      border-top: .4rem solid $primary-color;
+      color: $silver;
+    }
+  }
+}
+
+.page {
+  margin: 5.6rem auto 0;
+  width: 100%;
+}
+
+.header {
+  background: $primary-color;
+  box-sizing: border-box;
+  color: $white;
+  padding: 4rem 1rem;
+  width: 100%;
+
+  .tagline {
+    font-size: 2.3rem;
+    margin: 1rem 0;
+    text-align: center;
+  }
+}

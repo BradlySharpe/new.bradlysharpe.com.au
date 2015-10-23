@@ -3,34 +3,32 @@ $aqua:  #7fdbff !default;
 $blue:  #0074d9 !default;
 $navy:  #001f3f !default;
 $teal:  #39cccc !default;
+$light-green: #28cd83 !default;
 $green: #2ecc40 !default;
 $olive: #3d9970 !default;
 $lime:  #01ff70 !default;
 
 $yellow:  #ffdc00 !default;
 $orange:  #ff851b !default;
+$dark-orange:  #ff6700 !default;
 $red:     #ff4136 !default;
 $fuchsia: #f012be !default;
 $purple:  #b10dc9 !default;
 $maroon:  #85144b !default;
 
 $white:  #fff !default;
-$silver: #ddd !default;
+$silver: #eee !default;
 $gray:   #aaa !default;
-$black:  #111 !default;
+$black:  #222 !default;
 
-$light-grey: $silver !default;
-$dark-grey: #333 !default;
-$primary-color: #33c3f0 !default;
+$primary-color: #2db4de !default;
 $secondary-color: #555 !default;
-$border-color: $gray !default;
 $link-color: #1eaedb !default;
-$font-color: #222 !default;
+$font-color: #333 !default;
 
 // Typography
-$font-family: 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
-//$title-font-family: 'Quicksand', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
-$title-font-family: 'Raleway', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
+$font-family: 'Lato', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
+$title-font-family: 'Source Sans Pro', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
 
 //radius
-$radius: 8px;
+$radius: 3px;
