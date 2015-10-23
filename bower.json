@@ -1,0 +1,23 @@
+{
+  "name": "grunt-boilerplate",
+  "version": "0.0.1",
+  "authors": [
+    "Bradly Sharpe"
+  ],
+  "description": "Template for generator",
+  "main": "",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "dist"
+  ],
+  "dependencies": { }
+}

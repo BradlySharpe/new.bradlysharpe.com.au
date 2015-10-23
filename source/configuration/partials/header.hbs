@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    {{#if title}}
+    <title>{{title}} - {{ config 'site.title' }}</title>
+    {{else}}
+    <title>{{ config 'site.title' }}</title>
+    {{/if}}
+    <meta name="description" content="{{ config 'site.title' }}">
+    <meta name="keywords" content="{{ config 'site.title' }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Web font -->
+    <!-- <link href='//fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet' type='text/css'> -->
+    <!-- <link href="//fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet" type="text/css"> -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100|Source+Sans+Pro:300,400,200' rel='stylesheet' type='text/css'>
+    <!-- CSS -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <link rel="stylesheet" href="{{ config 'site.name' lowercase=true prefix="/css/" sufix=".min.css"}}" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/images/favicon.ico" />

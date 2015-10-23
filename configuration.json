@@ -1,0 +1,42 @@
+{
+  "directories" : {
+    "source": "source/",
+    "destination": "destination/",
+    "configuration": "source/configuration/",
+    "helpers": "source/configuration/helpers/",
+    "layouts": "source/configuration/layouts/",
+    "partials": "source/configuration/partials/",
+    "sass": "source/configuration/sass/",
+    "scripts": "source/configuration/scripts/",
+    "content": "source/content/",
+    "pages": "source/content/_pages/",
+    "blog": "source/content/blog/",
+    "images": "source/content/images/"
+  },
+  "site": {
+    "name": "bradly-sharpe-it",
+    "title": "Bradly Sharpe IT",
+    "defaultLayout": "page.hbs",
+    "localPort": 3000,
+    "protocol": "http",
+    "domain": "bradlysharpe.com.au"
+  },
+  "pagespeed": {
+    "locale": "en_GB",
+    "mobileThreshold": {
+      "local": 70,
+      "remote": 70
+    },
+    "desktopThreshold": {
+      "local": 80,
+      "remote": 80
+    },
+    "testPages": [ "" ]
+  },
+  "yslow": {
+    "weight": 180,
+    "speed": 1500,
+    "score": 80,
+    "requests": 15
+  }
+}

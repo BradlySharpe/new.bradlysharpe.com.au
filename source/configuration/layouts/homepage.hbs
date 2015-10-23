@@ -1,0 +1,16 @@
+{{> header }}
+</style>
+</head>
+<body>
+<div class="header">
+  <h1 class="title">{{ config 'site.title' }}</h1>
+  {{> navigation }}
+</div>
+<div class="page homepage">
+  <div class="row">
+    {{#markdown}}
+      {{> body }}
+    {{/markdown}}
+  </div>
+</div>
+{{> footer }}
