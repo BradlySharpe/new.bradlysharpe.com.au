@@ -21,6 +21,8 @@ $silver: #eee !default;
 $gray:   #aaa !default;
 $black:  #222 !default;
 
+$primary-color: #07acbd !default;
+$primary-color: lighten($blue, 5%) !default;
 $primary-color: #2db4de !default;
 $secondary-color: #555 !default;
 $link-color: #1eaedb !default;
@@ -32,3 +34,10 @@ $title-font-family: 'Source Sans Pro', 'HelveticaNeue', 'Helvetica Neue', Helvet
 
 //radius
 $radius: 3px;
+
+
+@mixin mq($width: 320px) {
+  @media (min-width: $width) {
+    @content;
+  }
+}

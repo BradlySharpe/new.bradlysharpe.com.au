@@ -6,12 +6,14 @@ html {
 }
 
 body {
+  background: $silver;
   color: $font-color;
   font-family: $font-family;
   font-size: 1.6rem;
   font-weight: 400;
 }
 
+h1,
 h2,
 h3,
 h4,
@@ -21,21 +23,15 @@ h6 {
   font-weight: 200;
 }
 
-h1 {
-  font-family: $title-font-family;
-  font-size: 4rem;
-  font-weight: 200;
-  margin: 0;
-  text-align: center;
-}
-
 .navigation {
   background: $black;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 1);
   left: 0;
   position: fixed;
+  right: 0;
   top: 0;
   width: 100%;
+  z-index: 1000;
 
   ul {
     align-items: center;
@@ -49,18 +45,22 @@ h1 {
   }
 
   li a {
-    border-top: .4rem solid transparent;
+    border-top: .5rem solid transparent;
     color: $white;
     display: inline-block;
     font-family: $title-font-family;
     font-size: 2rem;
     font-weight: 300;
-    padding: 1.1rem 1.5rem 1.5rem;
+    padding: 1rem 1rem 1.5rem;
     text-decoration: none;
-    transition: border-top .5s, color .5s;
+    transition: border .7s, color .7s;
+
+    @include mq(31.25rem) {
+      padding: 1rem 2.5rem 1.5rem;
+    }
 
     &:hover {
-      border-top: .4rem solid $primary-color;
+      border-top: .5rem solid lighten($primary-color, 10%);
       color: $silver;
     }
   }
@@ -72,15 +72,163 @@ h1 {
 }
 
 .header {
-  background: $primary-color;
+  //background: $primary-color;
+  background: linear-gradient(to bottom, lighten($primary-color, 0%) 0%, darken($primary-color, 20%) 80%);
   box-sizing: border-box;
   color: $white;
-  padding: 4rem 1rem;
+  padding: 4rem 1rem 14rem;
+  position: relative;
   width: 100%;
 
-  .tagline {
-    font-size: 2.3rem;
-    margin: 1rem 0;
+  &:before {
+    background: radial-gradient(opacify(lighten($primary-color, 10%), .1), transparent);
+    bottom: 0;
+    content: '';
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .wrapper {
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .title {
+    font-size: 4rem;
+    margin: 0;
     text-align: center;
+
+    &:after {
+      border-bottom: .1rem solid $white;
+      bottom: 0;
+      content: '';
+      display: block;
+      height: .1rem;
+      margin: 1rem auto;
+      width: 24rem;
+    }
+  }
+
+  .tagline {
+    margin: 0;
+    text-align: center;
+    text-transform: capitalize;
+  }
+
+  .wrap {
+    display: block;
+    font-family: $title-font-family;
+    font-size: 3.5rem;
+    font-weight: 200;
+    letter-spacing: -.1rem;
+
+    @include mq(31.25rem) {
+      font-size: 4rem;
+
+      &:first-child:after {
+        content: '\00a0';
+      }
+
+      &:first-child,
+      &:nth-child(2) {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+.services {
+  margin: -4rem 10% 0;
+  position: absolute;
+  width: 80%;
+
+  @include mq(50rem) {
+    margin:-4rem 12% 0;
+    width: 76%;
+  }
+
+  @include mq(81.25rem) {
+    margin:-4rem 20% 0;
+    width: 60%;
+  }
+
+  .wrapper {
+    @include mq(50rem) {
+      display: flex;
+    }
+  }
+}
+
+.services .card {
+  background: $white;
+  border-radius: $radius;
+  display: inline-block;
+  float: left;
+  margin-bottom: 8rem;
+  position: relative;
+  text-align: center;
+  width: 100%;
+
+  @include mq(50rem) {
+    flex: 1;
+    width: 48%;
+
+    &:nth-child(2n) {
+      margin-left: 4%;
+    }
+  }
+
+  &:hover .title:before {
+    transform: scaleX(1);
+    visibility: visible;
+  }
+
+  &:hover .img {
+    color: $primary-color;
+  }
+
+  .img {
+    background: $white;
+    border-radius: 50%;
+    color: $font-color;
+    font-size: 5rem;
+    height: 12rem;
+    line-height: 11rem;
+    margin: -6rem auto 0;
+    text-align: center;
+    transition: font-size .5s, color .7s;
+    vertical-align: top;
+    width: 12rem;
+  }
+
+  .title {
+    font-size: 2rem;
+    margin: -2.5rem 0 0;
+    transition: color .7s;
+
+    @include mq(25rem) {
+      font-size: 2.5rem;
+    }
+
+    &:before {
+      background-color: $primary-color;
+      content: '';
+      height: 2px;
+      left: 0;
+      margin: 0 15%;
+      position: absolute;
+      top: 7rem;
+      transform: scaleX(0);
+      transition: all .3s ease-in-out 0s;
+      visibility: hidden;
+      width: 70%;
+    }
+  }
+
+  p {
+    font-size: 1.5rem;
+    padding: 0 1.7rem;
   }
 }
