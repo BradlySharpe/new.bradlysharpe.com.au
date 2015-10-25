@@ -3,44 +3,55 @@
 <body>
   {{> navigation }}
   <div class="page">
-    <div class="header">
+    <div class="header shadow">
       <div class="wrapper">
         <h1 class="title">{{ config 'site.title' }}</h1>
         <!-- <p class="tagline">Hand Crafted Websites built on the Latest Technology for Small to Medium Businesses that Load Quick and Rank High.</p> -->
-        <p class="tagline"><span class="wrap">Small Business</span><span class="wrap">Web Developer</span><span class="wrap">&amp; IT Consultant</span></p>
+        <p class="tagline">
+          <span class="group">
+            <span class="wrap">Warrnambool Based</span>
+            <span class="wrap">Small Business</span>
+          </span>
+          <span class="group">
+            <span class="wrap">Web Developer</span>
+            <span class="wrap">&amp; IT Consultant</span>
+          </span>
+        </p>
       </div>
     </div>
-    <div class="services">
-      <div class="wrapper">
-        <div class="card">
-          <div class="img"><i class="fa fa-desktop"></i></div>
-          <h4 class="title">Web Development</h4>
-          <p>
-            Beautiful hand crafted, standards compliant websites built using the latest technology that will look pixel perfect on any device or web browser.
-          </p>
+    <div class="servicesWrapper shadow">
+      <div class="container services">
+        <div class="wrapper">
+          <div class="card">
+            <div class="img"><i class="fa fa-desktop"></i></div>
+            <h4 class="title">Web Development</h4>
+            <p>
+              Beautiful hand crafted, standards compliant websites built using the latest technology that will look pixel perfect on any device or web browser.
+            </p>
+          </div>
+          <div class="card">
+            <div class="img"><i class="fa fa-cogs"></i></div>
+            <h4 class="title">Search Engine Optimisation</h4>
+            <p>
+              Be seen! A website is not doing any good if customers can't find it!
+            </p>
+          </div>
         </div>
-        <div class="card">
-          <div class="img"><i class="fa fa-cogs"></i></div>
-          <h4 class="title">Search Engine Optimisation</h4>
-          <p>
-            Be seen! A website is not doing any good if customers can't find it!
-          </p>
-        </div>
-      </div>
-      <div class="wrapper">
-        <div class="card">
-          <div class="img"><i class="fa fa-users"></i></div>
-          <h4 class="title">IT Consulting</h4>
-          <p>
-            Computer running slow? Internet not working? Can't print? Avoid the headache, get in touch now for quick, hassle free service or request a check up.
-          </p>
-        </div>
-        <div class="card">
-          <div class="img"><i class="fa fa-server"></i></div>
-          <h4 class="title">Web &amp; Email Hosting</h4>
-          <p>
-            Australian hosting means your website and email are available quick!
-          </p>
+        <div class="wrapper">
+          <div class="card">
+            <div class="img"><i class="fa fa-users"></i></div>
+            <h4 class="title">IT Consulting</h4>
+            <p>
+              Computer running slow? Internet not working? Can't print? Avoid the headache, get in touch now for quick, hassle free service or request a check up.
+            </p>
+          </div>
+          <div class="card">
+            <div class="img"><i class="fa fa-server"></i></div>
+            <h4 class="title">Web &amp; Email Hosting</h4>
+            <p>
+              Australian hosting means your website and email are available quick!
+            </p>
+          </div>
         </div>
       </div>
     </div>
