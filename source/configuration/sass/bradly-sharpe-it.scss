@@ -1,5 +1,7 @@
 @charset 'utf-8';
 @import 'settings';
+@import 'normalize-3.0.3';
+@import '../../../bower_components/font-awesome/scss/font-awesome';
 
 html {
   font-size: 62.5%;

@@ -58,6 +58,9 @@ $box-shadow-top: 0 .1rem .3rem 0 $inner-shadow;
 $box-shadow-bottom: 0 .1rem .2rem 0 transparentize($outer-shadow, .25);
 $box-shadow: $box-shadow-bottom, inset $box-shadow-top;
 
+//Font Awesome Settings
+$fa-font-path: "/bower_components/font-awesome/fonts" !default;
+
 
 @mixin mq($width) {
   @media (min-width: $width) {

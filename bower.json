@@ -19,5 +19,15 @@
     "tests",
     "dist"
   ],
-  "dependencies": { }
+  "dependencies": {
+    "font-awesome": "fontawesome#~4.4.0"
+  },
+  "devDependencies": { },
+  "overrides": {
+    "font-awesome": {
+      "main": [
+        "fonts/*"
+      ]
+    }
+  }
 }

@@ -6,7 +6,7 @@ module.exports = {
       checkExistence: true,
       debugging: true,
       filter: function(file) {
-        return /^.*\.(?!scss$)[^.]+$/.test(file) ? file : false;
+        return /^.*\.(?!(scss|sass|less)$)[^.]+$/.test(file) ? file : false;
       },
       paths: {
         bowerDirectory: 'bower_components',
