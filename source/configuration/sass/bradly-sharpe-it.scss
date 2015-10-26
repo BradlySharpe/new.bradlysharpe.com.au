@@ -1,6 +1,7 @@
 @charset 'utf-8';
 @import 'settings';
 @import 'normalize-3.0.3';
+@import 'fonts';
 @import '../../../bower_components/font-awesome/scss/font-awesome';
 
 html {
@@ -52,7 +53,7 @@ h6 {
     display: inline-block;
     font-family: $title-font-family;
     font-size: 2rem;
-    font-weight: 300;
+    font-weight: 200;
     padding: 1rem 1rem 1.5rem;
     text-decoration: none;
     transition: border .7s, color .7s;
