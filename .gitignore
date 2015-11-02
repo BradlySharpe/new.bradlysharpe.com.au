@@ -1,7 +1,7 @@
 # Ignore the following folders and files
 node_modules/**
 bower_components/**
-/destination/**
+destination/**
 !/destination/css/
 !/destination/css/**/*.css
 !/destination/js/
