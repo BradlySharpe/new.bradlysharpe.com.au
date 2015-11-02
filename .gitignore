@@ -1,9 +1,11 @@
 # Ignore the following folders and files
-node_modules/
-bower_components/
-destination/
-!destination/css/**/*.css
-!destination/js/**/*.js
+node_modules/**
+bower_components/**
+/destination/**
+!/destination/css/
+!/destination/css/**/*.css
+!/destination/js/
+!/destination/js/**/*.js
 source/configuration/partials/css/*.css
-.sass-cache/
+.sass-cache/**
 SCSS-Lint-Report.xml
