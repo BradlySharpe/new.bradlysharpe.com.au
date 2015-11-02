@@ -2,6 +2,8 @@
 node_modules/
 bower_components/
 destination/
+!destination/css/**/*.css
+!destination/js/**/*.js
 source/configuration/partials/css/*.css
 .sass-cache/
 SCSS-Lint-Report.xml
