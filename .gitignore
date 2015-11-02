@@ -3,6 +3,7 @@ node_modules/**
 bower_components/**
 destination/**
 !/destination/fonts/
+!/destination/fonts/**/*.*
 !/destination/css/
 !/destination/css/**/*.css
 !/destination/js/
